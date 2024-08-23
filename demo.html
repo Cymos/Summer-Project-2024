@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCOTS - Demo</title>
+    <link rel="stylesheet" href="demo-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div id="game-container">
+        <h1>TCOTS - Fight Demo</h1>
+        <select id="enemy-select">
+            <option value="enemy1">Enemy 1</option>
+            <option value="enemy2">Enemy 2</option>
+            <option value="enemy3">Enemy 3</option>
+        </select>
+        <div class="stats-container">
+        <div class="stats" id="player-stats">
+            <h2>Player Stats</h2>
+            <ul class="stat-list">
+                <li>Level: <span id="player-level">1</span></li>
+                <li>Health: <span id="player-health">100</span></li>
+                <li>Strength: <span id="player-strength">20</span></li>
+                <li>Armor: <span id="player-armor">15</span></li>
+                <li>Gold: <span id="player-gold">0</span></li>
+                <li>Experience: <span id="player-experience">0 / 100</span></li>
+            </ul>
+        </div>
+        <div class="stats" id="enemy-stats">
+            <h2>Enemy Stats</h2>
+            <ul class="stat-list">
+                <p>Health: <span id="enemy-health">100</span></p>
+                <p>Strength: <span id="enemy-strength">15</span></p>
+                <p>Armor: <span id="enemy-armor">10</span></p>
+            </ul>
+        </div>
+        </div>
+        <!-- Skills -->
+         <div class="skills" id="player-skills">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>Skill 1: <span id="skill1-level">1</span></li>
+                <li>Skill 2: <span id="skill2-level">1</span></li>
+                <li>Skill 3: <span id="skill3-level">1</span></li>
+            </ul>
+         </div>
+        <button id="fight-button">Fight</button>
+
+        <div id="fight-result"></div>
+        <div id="fight-log">
+            <h2>Combat Log</h2>
+            <ul id="log-list">
+                <!-- logs will be dynamically inserted here -->
+            </ul>
+        </div>
+     </div>
+
+     <script src="demo-script.js"></script>
+</body>
+</html>
